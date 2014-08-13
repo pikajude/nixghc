@@ -8,8 +8,8 @@ in
   build = genAttrs supportedPlatforms (system:
     with (import <nixpkgs> { inherit system; });
     callPackage ./default.nix {
-      inherit (haskellPackages) ghc;
-      inherit (haskellPackages_ghcHEAD) alex happy;
+      ghc = ghc.ghc783;
+      inherit (haskellPackages_ghc783) alex happy;
     }
   );
 }
