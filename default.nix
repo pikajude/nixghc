@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   src = fetchgit {
     url = "https://git.haskell.org/ghc.git";
     rev = "refs/heads/master";
-    sha256 = "1y7n2xf2frc05c7wl483lf6lnflr5dfxfjnzw2s22mv7cgl89z8c";
+    sha256 = "0z6b19927kyxkfwic5k5ql6l3p2fsrfd7jk9h0c64wkyjj077jwi";
   };
 
   buildInputs = [ ghc perl gmp ncurses happy alex autoconf automake ];
